@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: url(../img/landing-page_bg.png);
+    background-size:cover;
+    background-repeat: none;
+    background-position: top center;
+}
+
+#dpbLogo {
+    border-radius: 20px;
+    position: relative;
+    left: 7vw;
+    transform: scale(1.9);
+    height: 200px;
+}
+
+header button {
+    position: absolute !important;
+    top: 13vh;
+    left: 84vw;
+    width: 8vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #307c6a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button {    
+    top: 13vh;
+    left: 84vw;
+    width: 8vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #307c6a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.closeButton {
+    position: absolute !important;
+    top: 5vh !important;
+    left: 80% !important;
+    height: auto !important;
+    width: auto !important;
+    background-color: gray;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+.hero {
+    background-color: rgba(255, 255, 255, 0.678);
+}
+
+.sidenav {
+    position: absolute;
+    top: 0;
+    left: 81%;
+    height: 56vh;
+    padding-right: 5vw;
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#sideNav {
+    visibility: hidden;
+}
+
+.cssScriptOne {
+    animation-name: menuSlideOpen;
+    animation-duration: 1s;
+}
+
+a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes menuSlideOpen {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#spreadsheets {
+    left: 81vw;
+    visibility: hidden;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+}
+
+#VOBForms {
+    left: 84vw;
+    visibility: hidden;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+}
+
+#URForms {
+    left: 84vw;
+    visibility: hidden;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+}
+
+#VOBForms a,
+#spreadsheets a,
+#URForms a {
+    color: #307c6a;
+    font-weight: 600;
+}

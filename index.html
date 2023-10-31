@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+    <title>DataPro Billing Team Page</title>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <header>
+                <h1 class="screenWidth"><img src="./img/dpb-logo.png" alt="Data Pro Billing" id="dpbLogo"></h1>
+                <span><button onmouseenter="openNav()" id="menuButton">Menu</button></span>
+            </header>
+            <div><img src="./img/body-statement.png" alt="Billing and Revenue Cycle Management Team Directory"></div>
+        </div>
+        <div id="sideNav" class="sidenav" onmouseleave="closeNav()">
+            <button onclick="display1()">Spreadsheets</a></button>
+            <button onclick="display2()">Utilization Review</button>
+            <button onclick="display()">VOB Forms</button>
+        </div>
+        <span id="VOBForms" class="sidenav">
+            <button class="closeButton" onclick="fadeout()">&times;</button>
+            <a href="">test1</a>
+            <a href="">test2</a>
+            <a href="">test3</a>
+        </span>
+        <span id="spreadsheets" class="sidenav">
+            <button class="closeButton" onclick="fadeout1()">&times;</button>
+            <a href="https://docs.google.com/spreadsheets/d/1Ip7nEGNx5Be2PubCYsoBBBLIJGN__vaACTQfVsJgn8w/edit?usp=sharing" target="_blank" onclick="fadeout1()">Login Directory</a>
+            <a href="https://docs.google.com/spreadsheets/d/1VUmlKoXww3J2RPB0GpLIMtW26KY4fcTrxuhWmfF7vvg/edit?usp=sharing" target="_blank" onclick="fadeout1()">Facility EMR's</a>
+            <a href="https://docs.google.com/spreadsheets/d/1YGIvmY7khdjgtKaB1-cxq7D2RsSFLZWqWv984iE6nIU/edit?usp=sharing" target="_blank" onclick="fadeout1()">Tax ID's and NPI's</a>
+            <a href="https://docs.google.com/spreadsheets/d/1zLqUKmw5ElmxqllMUVZHQfmzU4Ljb5cBIe-r0hW8gVI/edit?usp=sharing" target="_blank" onclick="fadeout1()">Insurance Contacts</a>
+        </span>
+        <span id="URForms" class="sidenav">
+            <button class="closeButton" onclick="fadeout2()">&times;</button>
+            <a href="">test1</a>
+            <a href="">test2</a>
+            <a href="">test3</a>
+        </span>
+    </main>
+</body>
+</html>
