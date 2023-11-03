@@ -120,6 +120,10 @@ header img {
         max-height: 25%;
     }
 
+    footer {
+        display: none;
+    }
+
 
 /* table,tr & td implemented to fix table-layout print issue */
     table,
@@ -196,4 +200,9 @@ table {
 
 .bg1 {
     background-color: rgb(214, 214, 214);
+}
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
