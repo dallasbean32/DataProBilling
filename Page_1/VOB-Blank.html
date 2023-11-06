@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head class="dont-print">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+        <script src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>VOB Form</title>
+    </head>
+<body>
+    <div id="bOne">
+        <header class="dont-print">
+            <img src="./img/dpb-logo.png" alt="DPB Logo" id="header-logo"> <span>VOB Form</span>
+        </header>
+        <main>
+            <div class="row-1" id="row-1">
+                <div class="box1 bold"><span id="facNameLabel" class="hide">Facility Name: <button class="closeBtn dont-print" onclick="swap()">&times;</button><br></span>
+                    <select name="facility" id="facility" class="fillSpace" onchange="fill1()">
+                        <option class="bold" value="blank" disabled selected>Facility Name</option>
+                        <option class="bold" value="1">Amend Treatment RTC</option>
+                        <option class="bold" value="2">Atlanta Integrative Psychiatry</option>
+                        <option class="bold" value="3">Dolorosa/HPE/Manifest</option>
+                        <option class="bold" value="4">Executive Recovery</option>
+                        <option class="bold" value="5">Engage treatment Program</option>
+                        <option class="bold" value="6">Harmony Place</option>
+                        <option class="bold" value="7">LAT Intesive Outpatient</a></option>
+                        <option class="bold" value="8">Lionheart Recovery</option>
+                        <option class="bold" value="9">American Riviera DBA Mission Harbor</option>
+                        <option class="bold" value="10">Present Moments</option>
+                        <option class="bold" value="11">Pulse TMS</option>
+                        <option class="bold" value="12">Radiance Recovery</option>
+                        <option class="bold" value="13">Restore Detox Center</option>
+                        <option class="bold" value="14">Revive Detox</option>
+                        <option class="bold" value="15">Valley Restoration Center</option>
+                        <option class="bold" value="manual">manual</option>
+                    </select>
+                    <textarea name="manualEntry" id="manBox" cols="24" rows="5" class="hide"></textarea>
+                </div>
+                <div class="box2 bold">Facility address: <br><textarea name="" id="facAddress" cols="24" rows="5"></textarea></div>
+                <div class="box3 bold">NPI: <br><textarea name="" id="npi" cols="24" rows="5"></textarea></div>
+                <div class="box4 bold">Tax ID: <br><textarea name="" id="taxID" cols="24" rows="5"></textarea></div>
+                <div class="box5 bold textRight">Verification date:</div>
+                <div class="box6 bold textRight">Verified by:</div>
+                <div class="box7 bold textRight">Reference number:</div>
+                <div class="box8 bold textRight">Representative name:</div>
+                <div class="box9"><input type="date" class="fillSpace"></div>
+                <div class="box10"><input type="text" class="fillSpace"></div>
+                <div class="box11"><input type="text" class="fillSpace"></div>
+                <div class="box12"><input type="text" class="fillSpace"></div>
+                <div class="box13 bold centerText">VOB Information</div>
+            </div>
+            <div class="row-2" id="sectionTwo">
+                <div class="column1">
+                    <div class="colHeader centerText">Primary Insurance</div>
+                    <table>
+                        <tbody class="fillSpace">
+                            <tr class="bg1">
+                                <td class="question bold textRight">Full Name:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Policy Number:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Group Number:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Client DOB:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Benefits Phone #:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Insurance Company:</td>
+                                <td><textarea class="fillSpace"></textarea></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Insurance Phone #:</td>
+                                <td><textarea class="fillSpace"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Client SSN:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Client Address w/ Insurance:</td>
+                                <td><textarea class="fillSpace"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Plan Name (if avail.):</td>
+                                <td><textarea class="fillSpace"></textarea></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Issuing State:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Type of Plan:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Claims Address:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Payer ID:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Subscriber Name:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Subscriber DOB:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Subscriber SSN:</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Relationship to Client:</td>
+                                <td><textarea class="fillSpace"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div class="colHeader centerText">Eligibility Information</div>
+                    <table>
+                        <tr class="bg1">
+                            <td class="question bold textRight">Insurance Effective Start Date:</td>
+                            <td><input type="date" class="fillSpace"></td>
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">Insurance Paid Through Date:</td>
+                            <td><input type="date" class="fillSpace"></td>
+                        </tr>
+                        <tr class="bg1">
+                            <td class="question bold textRight">Insurance Plan:</td>
+                            <td><select name="insurancePlan" id="calendarOrPlan" class="fillSpace">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Calendar Year</option>
+                                    <option value="">Plan Year</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">Plan Year Dates <br> From/To:</td>
+                            <td><input type="text" class="fillSpace"></td>
+                        </tr>
+                        <tr class="bg1">
+                            <td class="question bold textRight">Policy Type(s):</td> 
+                            <td>                          
+                                <input type="checkbox"> Self-Funded <br>
+                                <input type="checkbox"> Fully-Funded
+                                <input type="checkbox"> Exchange
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">COBRA:</td>
+                            <td><select id="cobra" class="fillSpace">
+                                <option value="" disabled selected></option>
+                                <option value="">No</option>
+                                <option value="">Yes</option>
+                            </select></td>                        
+                        </tr>
+                        <tr class="bg1">
+                            <td class="question bold textRight">Do you accept Assignment of Benefits (AOB)?:</td>
+                            <td><select id="aob" class="fillSpace">
+                                <option value="" disabled selected></option>
+                                <option value="">No</option>
+                                <option value="">Yes</option>
+                            </select></td>     
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">Are payments sent to Member or Facility?:</td>
+                            <td><select id="memberOrFacility" class="fillSpace">
+                                <option value="" disabled selected></option>
+                                <option value="">Member</option>
+                                <option value="">Facility</option>
+                            </select></td>    
+                        </tr>
+                        <tr class="bg1">
+                            <td class="question bold textRight">COB on file?:</td>
+                            <td><select id="cobOnFile" class="fillSpace">
+                                <option value="" disabled selected></option>
+                                <option value="">No</option>
+                                <option value="">Yes</option>
+                            </select></td>  
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">When was the COB last updated?:</td>
+                            <td><input type="date" class="fillSpace"></td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="column2">
+                <div class="colHeader centerText">In Network? <input type="checkbox" id="inNetwork"> Yes <input type="checkbox" id="oofNetwork" onclick="reveal()"> No</div>
+                    <table id="networkTable">
+                            <tbody>
+                                <tr class="bg1">
+                                    <td class="smallerFont bold textRight">Individual Deductible:</td>
+                                    <td><input type="text" class="fillSpace"></td>
+                                    <td class="smallerFont bold textRight">Individual Ded. met:</td>                                
+                                    <td><input type="text" class="fillSpace"></td>
+                                </tr>
+                                <tr>
+                                    <td class="smallerFont bold textRight">Individual OOP max:</td>
+                                    <td><input type="text" class="fillSpace"></td>
+                                    <td class="smallerFont bold textRight">Individual OOP met:</td>                                
+                                    <td><input type="text" class="fillSpace"></td>
+                                </tr>
+                                <tr class="bg1">
+                                    <td class="smallerFont bold textRight">Family Deductible:</td>
+                                    <td><input type="text" class="fillSpace"></td>
+                                    <td class="smallerFont bold textRight">Family Ded. met:</td>                                
+                                    <td><input type="text" class="fillSpace"></td>
+                                </tr>
+                                <tr>
+                                    <td class="smallerFont bold textRight">Family OOP max:</td>
+                                    <td><input type="text" class="fillSpace"></td>
+                                    <td class="smallerFont bold textRight">Family OOP met:</td>                                
+                                    <td><input type="text" class="fillSpace"></td>
+                                </tr>
+                                <tr class="bg1">
+                                    <td class="smallerFont bold textRight">Coinsurance, Insurance pays %:</td>
+                                    <td><input type="text" class="fillSpace"></td>
+                                    <td class="smallerFont bold textRight">Coinsurance, Member pays %:</td>                                
+                                    <td><input type="text" class="fillSpace"></td>
+                                </tr>
+                                <tr>
+                                    <td class="smallerFont bold textRight">Are medical and SA deductibles combined?</td>
+                                    <td class="smallFont"><input type="checkbox"> Yes <br><input type="checkbox"> No <br><input type="checkbox"> N/a</td>
+                                    <td class="red smallerFont bold textRight">4th Quarter ded. carryover?</td>                                
+                                    <td class="smallFont"><input type="checkbox"> Yes <br><input type="checkbox"> No <br><input type="checkbox"> N/a</td>
+                                </tr>
+                                <tr class="bg1">
+                                    <td class="red smallerFont bold textRight">In-net ded. & OOP accumulate toward OON?</td>
+                                    <td class="smallFont"><input type="checkbox"> Yes <br><input type="checkbox"> No <br><input type="checkbox"> N/a</td>
+                                    <td class="red smallerFont bold textRight">HRA or HSA account?</td>                                
+                                    <td class="smallFont"><input type="checkbox"> Yes <br><input type="checkbox"> No <br><input type="checkbox"> N/a</td>
+                                </tr>
+                                <tr>
+                                    <td class="red smallerFont bold textRight">Does ded. apply to OOP?</td>
+                                    <td class="smallFont"><input type="checkbox"> Yes <br><input type="checkbox"> No <br><input type="checkbox"> N/a</td>
+                                    <td class="red smallerFont bold textRight">HRA or HSA available balance?</td>                                
+                                    <td><input type="text" class="fillSpace"></td>
+                                </tr>
+                                <tr class="bg1">
+                                    <td class="smallerFont bold textRight">Ded. to be satisfied before claims get paid?</td>
+                                    <td class="smallFont"><input type="checkbox"> Individual <br><input type="checkbox"> Family <br><input type="checkbox"> Either</td>
+                                    <td class="smallerFont bold textRight">Will plan pay if client leaves AMA?</td>                                
+                                    <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                                </tr>
+                                <tr>
+                                    <td class="smallerFont bold textRight">Which OOP max needs to be met for plan to pay at 100% of allowable?</td>
+                                    <td class="smallFont"><input type="checkbox"> Individual <br><input type="checkbox"> Family <br><input type="checkbox"> Either</td>
+                                    <td class="smallerFont bold textRight">Date deductible was met?</td>                                
+                                    <td class="smallFont centerText"><input type="text" class="fillSpace"></td>
+                                </tr>
+                                <tr class="bg1">
+                                    <td class="smallerFont bold textRight">Is plan contracted with a 3rd party pricing company?</td>
+                                    <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                                    <td class="smallerFont bold textRight">Will plan pay if client leaves AMA?</td>
+                                    <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                                </tr>
+                                <tr>
+                                    <td class="smallerFont bold textRight">Inpatient admit copay:</td>
+                                    <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                                    <td class="smallerFont bold textRight">Outpatient admit copay:</td>
+                                    <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                                </tr>
+                                <tr class="bg1">
+                                    <td class="smallerFont bold textRight">Will copay be per admission or per LOC?</td>
+                                    <td class="smallFont"><input type="checkbox"> Admission <input type="checkbox"> LOC</td>
+                                    <td class="smallerFont bold textRight">Will copay be waived once OOP is met?</td>
+                                    <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="smallerFont bold textRight">Claims timely filing:</td>
+                                    <td class="smallFont wide"><input type="checkbox"> 90 Days <input type="checkbox"> 180 Days <input type="checkbox"> 1 year <input type="checkbox"> other: <input type="text" class="fillSpace"></td>
+                                </tr>
+                            </tbody>
+                            <tbody id="outOfNetworkQ" class="hide">
+                                <tr class="bg1">
+                                    <td class="smallerFont bold textRight">Reimbursement:</td>
+                                    <td class="smallFont wide"><input type="checkbox"> Usual & customary <input type="checkbox"> Fair health <br><input type="checkbox"> Medicare <input type="text" placeholder="%"></td>
+                                </tr>
+                            </tbody>
+                        </tbody>
+                    </table>
+                    <div class="colHeader centerText">Behavioral Health Carve Out</div>
+                    <table>
+                        <tr class="bg1">
+                            <td class="question bold textRight">Carve out company name:</td>
+                            <td><input type="text" class="fillSpace"></td>
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">Carve out phone #:</td>
+                            <td><input type="text" class="fillSpace"></td>
+                        </tr>
+                        <tr class="bg1">
+                            <td class="question bold textRight">ID # to use on claims:</td>
+                            <td><input type="text" class="fillSpace"></td>
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">Group # to use on claims:</td>
+                            <td><input type="text" class="fillSpace"></td>
+                        </tr>
+                    </table>
+                    <div class="colHeader centerText">COB update</div>
+                    <table>
+                        <tr class="bg1">
+                            <td class="smallFont centerText"><textarea id="" cols="55" rows="8"></textarea></td>
+                        </tr>
+                    </table>
+            </div>
+            <div class="column3">
+                <div class="colHeader centerText">Pre-cert Information</div>
+                    <table>
+                        <tr class="bg1">
+                            <td class="question bold textRight">Pre-cert company:</td>
+                            <td><input type="text" class="fillSpace"></td>
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">Pre-cert phone #:</td>
+                            <td><input type="text" class="fillSpace"></td>
+                        </tr>
+                        <tr class="bg1">
+                            <td class="question bold textRight">Can we pre-certify this patient w/in 24 hours of admission?</td>
+                            <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                        </tr>
+                        <tr>
+                            <td class="question bold textRight">Do we have to do a pre-notification of admission prior to admission to obtain authorization?</td>
+                            <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                        </tr>
+                        <tr class="bg1">
+                            <td class="question bold textRight">Is there a Pre-cert penalty?</td>
+                            <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                        </tr>
+                    </table>
+                    <div class="colHeader centerText">Mental Health and Substance Abuse Benefit Summary</div>
+                        <table>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Out of network?</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">Out of state benefits?</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">State license sufficient?</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">JCAHO required?</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">CARF required?</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr>
+                                <td class="question bold textRight">If JCAHO/CARF required, for what LOC?</td>
+                                <td><input type="text" class="fillSpace"></td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Freestanding facility covered?</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr>
+                                <td class="red question bold textRight">Policy exclusions / limitations?<br><span class="smallerFont">(Ex. benefit max, dollar max)</span></td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="red question bold textRight">Limit, LOC not covered, day or episode limit</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr>
+                                <td class="red question bold textRight">Is telemedicine covered for PHP & IOP LOC?</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr class="bg1">
+                                <td class="red question bold textRight">Limit, LOC not covered, day or episode limit</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Yes <input type="checkbox"> No </td>
+                            </tr>
+                            <tr>
+                                <td class="red question bold textRight">Levels of care covered?</td>
+                                <td class="smallFont centerText"><input type="checkbox"> Detox <input type="checkbox"> RTC <input type="checkbox"> PHP<br> <input type="checkbox"> IOP <input type="checkbox"> OP </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr class="bg1">
+                                <td class="question bold textRight">Extra notes:</td>
+                                <td class="smallFont centerText"><textarea id="" cols="33" rows="10"></textarea></td>
+                            </tr>
+                        </table>
+            </div>
+        </div>
+        <footer><span class="button-box"><button type="button" onclick="window.print();return false" class="p-button">Print to PDF</button></span></footer>
+        </main>
+    </div>
+    <div id="bTwo" class="hide">            
+        <header>
+            <h1>Insurance Verification Form</h1>
+            <h3>4551 Glencoe Ave. Marina Del Rey, CA 90292 <br>NPI: 1306265954 Tax ID: 46-5350178</h3>
+        </header>
+        <br>
+        <main>
+            <div class="parent">
+                Facility Name: <input type="text" value="LAT-IOP"> Today's Date: <input type="date"><br>
+                Patient Name: <input type="text" class="doubleWide"> SS# <input type="text"> DOB: <input type="date"> Sex <input type="checkbox"> F <input type="checkbox"> M <br>
+                Patient Address: <input type="text" class="doubleWide"> Patient Phone: <input type="text"><br>
+                Insured Name: <input type="text"> INS DOB: <input type="date"> INS SS# <input type="text" placeholder="--- -- ----"><br>
+                Insured Relationship: <input type="text"> Employed: <input type="checkbox"> Y <input type="checkbox"> N Student: <input type="checkbox"> Y <input type="checkbox"> N <br>
+                Insurance Company: <input type="text" class="doubleWide"> Ins Phone: <input type="text"><br>
+                ID#: <input type="text"> GRP #: <input type="text"> Type of Plan: <input type="text"> Ref: <input type="text"><br>
+                Facility Representative: <input type="text" class="doubleWide"> Date: <input type="date"> Time: <input type="time"> <br>
+                <br>
+                <div class="HPartition"></div>
+                Effective Date: <input type="date">
+                <ol class="tabRight">
+                    <li>What type of policy is this? Ie. ACA, Employer Group, Gov, Etc. <input type="text"></li>
+                    <li>Are benefits In or out of Network: <input type="checkbox"> In <input type="checkbox"> Out <br>
+                        <input type="checkbox"> Detox <input type="checkbox"> RTC <input type="checkbox"> PHP <input type="checkbox"> IOP <input type="checkbox"> OP</li>
+                    <li>What is the member's deductible? <input type="text" class="doubleWide"></li>
+                    <li>Has any of ths deductible been met? <input type="text" class="doubleWide"></li>
+                    <li>What is members OPM? <input type="text" class="doubleWide"></li>
+                    <li>Has any of this OPM been met? <input type="text" class="doubleWide"></li>
+                    <li>What is the member's coverage after deductible is met? <input type="text" class="doubleWide"></li>
+                    <li>Does the member have a cap on number of sessions/tx? <input type="text" class="doubleWide"></li>
+                    <li>Is a dollar max per day? <input type="text" class="doubleWide"></li>
+                    <li>Is policy reimbursement based on Medicare Fee Schedule (what percentage?) <input type="text"></li>
+                    <li>Is JCAHO accreditation required? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>Is Pre-certification required? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>Is telehealth a covered service? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>What is the phone number for Pre-certification? <input type="text" class="doubleWide"></li>
+                    <li>Are there any exclusions to the policy? <input type="text" class="doubleWide"></li>
+                </ol>
+                <br>
+                Reference #: <input type="text" class="doubleWide"><br>
+                Verified by: <input type="text"> Date: <input type="date"> Time: <input type="time">
+                <br>
+                <br>
+                <div class="HPartition"></div>
+            </div>
+        </main>
+        <footer>
+            <button onclick="revert1()">Return to list</button> <button type="button" onclick="window.print();return false" class="p-button">Print to PDF</button>
+        </footer>
+    </div>
+    <div id="bThree" class="hide">
+        <header>
+            <h1>Insurance Verification Form</h1>
+            <h3>Revive Detox 360 N. Vista St LA, CA 90036 <br>NPI: 1639561566 Tax ID: 471837714</h3>
+        </header><br>
+        <main>
+            <div class="parent">
+                Facility Name: <input type="text" value="Revive Detox"> Today's Date: <input type="date"><br>
+                Patient Name: <input type="text" class="doubleWide"> SS# <input type="text"> DOB: <input type="date"> Sex <input type="checkbox"> F <input type="checkbox"> M <br>
+                Patient Address: <input type="text" class="doubleWide"> Patient Phone: <input type="text"><br>
+                Insured Name: <input type="text"> INS DOB: <input type="date"> INS SS# <input type="text" placeholder="--- -- ----"><br>
+                Insured Relationship: <input type="text"> Employed: <input type="checkbox"> Y <input type="checkbox"> N Student: <input type="checkbox"> Y <input type="checkbox"> N <br>
+                Insurance Company: <input type="text" class="doubleWide"> Ins Phone: <input type="text"><br>
+                ID#: <input type="text"> GRP #: <input type="text"> Type of Plan: <input type="text"> Ref: <input type="text"><br>
+                Facility Representative: <input type="text" class="doubleWide"> Date: <input type="date"> Time: <input type="time"> <br>
+                <br>
+                <div class="HPartition"></div>
+                Effective Date: <input type="date">
+                <ol class="tabRight">
+                    <li>What type of policy is this? Ie. ACA, Employer Group, Gov, Etc. <input type="text"></li>
+                    <li>Are benefits In or out of Network: <input type="checkbox"> In <input type="checkbox"> Out <br>
+                        <input type="checkbox"> Detox <input type="checkbox"> RTC <input type="checkbox"> PHP <input type="checkbox"> IOP <input type="checkbox"> OP</li>
+                    <li>What is the member's deductible? <input type="text" class="doubleWide"></li>
+                    <li>Has any of ths deductible been met? <input type="text" class="doubleWide"></li>
+                    <li>What is members OPM? <input type="text" class="doubleWide"></li>
+                    <li>Has any of this OPM been met? <input type="text" class="doubleWide"></li>
+                    <li>What is the member's coverage after deductible is met? <input type="text" class="doubleWide"></li>
+                    <li>Does the member have a cap on number of sessions/tx? <input type="text" class="doubleWide"></li>
+                    <li>Is a dollar max per day? <input type="text" class="doubleWide"></li>
+                    <li>Is policy reimbursement based on Medicare Fee Schedule (what percentage?) <input type="text"></li>
+                    <li>Is JCAHO accreditation required? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>Is Pre-certification required? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>Is telehealth a covered service? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>What is the phone number for Pre-certification? <input type="text" class="doubleWide"></li>
+                    <li>Are there any exclusions to the policy? <input type="text" class="doubleWide"></li>
+                </ol>
+                <br>
+                Reference #: <input type="text" class="doubleWide"><br>
+                Verified by: <input type="text"> Date: <input type="date"> Time: <input type="time">
+                <br>
+                <br>
+                <div class="HPartition"></div>
+            </div>
+        </main>
+        <footer>
+            <button onclick="revert2()">Return to list</button> <button type="button" onclick="window.print();return false" class="p-button">Print to PDF</button>
+        </footer>
+    </div>
+    <div id="bFour" class="hide">
+        <header>
+            <h1>Insurance Verification Form</h1>
+            <h3>Radiance Recovery 10522 De Soto Ave. Chatsworth, CA 91311 <br>NPI: 1689141814 Tax ID: 824542845</h3>
+        </header><br>
+        <main>
+            <div class="parent">
+                Facility Name: <input type="text" value="Radiance Recovery"> Today's Date: <input type="date"><br>
+                Patient Name: <input type="text" class="doubleWide"> SS# <input type="text"> DOB: <input type="date"> Sex <input type="checkbox"> F <input type="checkbox"> M <br>
+                Patient Address: <input type="text" class="doubleWide"> Patient Phone: <input type="text"><br>
+                Insured Name: <input type="text"> INS DOB: <input type="date"> INS SS# <input type="text" placeholder="--- -- ----"><br>
+                Insured Relationship: <input type="text"> Employed: <input type="checkbox"> Y <input type="checkbox"> N Student: <input type="checkbox"> Y <input type="checkbox"> N <br>
+                Insurance Company: <input type="text" class="doubleWide"> Ins Phone: <input type="text"><br>
+                ID#: <input type="text"> GRP #: <input type="text"> Type of Plan: <input type="text"> Ref: <input type="text"><br>
+                Facility Representative: <input type="text" class="doubleWide" value="Landi Zontelli"> Date: <input type="date"> Time: <input type="time"> <br>
+                <br>
+                <div class="HPartition"></div>
+                Effective Date: <input type="date">
+                <ol class="tabRight">
+                    <li>What type of policy is this? Ie. ACA, Employer Group, Gov, Etc. <input type="text"></li>
+                    <li>Are benefits In or out of Network: <input type="checkbox"> In <input type="checkbox"> Out <br>
+                        <input type="checkbox"> Detox <input type="checkbox"> RTC <input type="checkbox"> PHP <input type="checkbox"> IOP <input type="checkbox"> OP</li>
+                    <li>What is the member's deductible? <input type="text" class="doubleWide"></li>
+                    <li>Has any of ths deductible been met? <input type="text" class="doubleWide"></li>
+                    <li>What is members OPM? <input type="text" class="doubleWide"></li>
+                    <li>Has any of this OPM been met? <input type="text" class="doubleWide"></li>
+                    <li>What is the member's coverage after deductible is met? <input type="text" class="doubleWide"></li>
+                    <li>Does the member have a cap on number of sessions/tx? <input type="text" class="doubleWide"></li>
+                    <li>Is a dollar max per day? <input type="text" class="doubleWide"></li>
+                    <li>Is policy reimbursement based on Medicare Fee Schedule (what percentage?) <input type="text"></li>
+                    <li>Is JCAHO accreditation required? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>Is Pre-certification required? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>Is telehealth a covered service? <input type="checkbox"> Y <input type="checkbox"> N</li>
+                    <li>What is the phone number for Pre-certification? <input type="text" class="doubleWide"></li>
+                    <li>Are there any exclusions to the policy? <input type="text" class="doubleWide"></li>
+                </ol>
+                <br>
+                Reference #: <input type="text" class="doubleWide"><br>
+                Verified by: <input type="text"> Date: <input type="date"> Time: <input type="time">
+                <br>
+                <br>
+                <div class="HPartition"></div>
+            </div>
+        </main>
+        <footer>
+            <button onclick="revert3()">Return to list</button> <button type="button" onclick="window.print();return false" class="p-button">Print to PDF</button>
+        </footer>
+    </div>
+</body>
+</html>
