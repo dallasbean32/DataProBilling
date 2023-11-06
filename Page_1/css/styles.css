@@ -192,7 +192,8 @@ header img {
 #bThree header,
 #bFour header {
     background-repeat:no-repeat;
-    background-position-x: left;    
+    background-position-x: left; 
+    background-position-y: center;    
 }
 
 /* table,tr & td implemented to fix table-layout print issue */
