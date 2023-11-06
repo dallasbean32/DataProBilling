@@ -16,18 +16,6 @@ function closeNav() {
     three.classList.toggle("cssScriptOne");
 }
 
-// VOB Forms Launch and Close logic
-
-function display() {
-    document.getElementById("VOBForms").style.visibility = "visible";
-    document.getElementById("VOBForms").classList.toggle("cssScriptOne");
-}
-
-function fadeout() {
-    document.getElementById("VOBForms").style.visibility = "hidden"; 
-    document.getElementById("VOBForms").classList.toggle("cssScriptOne");
-}
-
 // Spreadsheets Launch and Close logic
 
 function display1() {
