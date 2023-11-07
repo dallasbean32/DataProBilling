@@ -74,6 +74,8 @@ function fill1() {
         document.getElementById("facAddress").textContent = "1663 Sawtelle Blvd, Ste 240, Los Angeles, CA 90025";
         document.getElementById("npi").textContent = "1669976874";
         document.getElementById("taxID").textContent = "824673065";
+        document.getElementById("popup").classList.toggle("hide");
+        window.open("./img/Pulse-TMS_excel-Sheet.xlsx");
 }
     if (output == "12") {
         document.getElementById("facAddress").textContent = "10522 De Soto Ave. Chatsworth, CA 91311";
@@ -123,8 +125,11 @@ function revert2() {
     document.getElementById("bThree").classList.toggle("hide");
 }
 
-
 function revert3() {
     document.getElementById("bOne").classList.toggle("hide");
     document.getElementById("bFour").classList.toggle("hide");
+}
+
+function closebtn() {
+    document.getElementById("popup").classList.toggle("hide");
 }
