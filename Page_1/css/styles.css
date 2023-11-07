@@ -29,6 +29,17 @@ header img {
     padding-left: 0.25em;
 }
 
+.closeBtn {
+    position: relative;
+    z-index: 99;
+    top: -200px;
+    left: 95%;
+    width: 1.5em;
+    height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 /* additional body rules below */
 
 #bTwo input,
@@ -69,6 +80,12 @@ header img {
     margin-left: 50px;
 }
 
+.deadSpace {
+    background-color: white;
+    color: white;
+    visibility: hidden;
+}
+
 .doubleWide {
     width: 300px;
 }
@@ -80,7 +97,7 @@ header img {
     background-color: black;
 }
 
-/* end of second body rules */
+/* end of secondary body rules */
 
 .hide {
     display: none;
@@ -110,6 +127,18 @@ header img {
 
 .smallerFont {
     font-size: x-small;
+}
+
+#popup {
+    background-color: red;
+    width: 50%;
+    font-weight: bold;
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 99;
+    
 }
 
 /* toggle row-1 & row-1-a by selecting 'manual' option. reformats columns without messing with the styling in JS */
@@ -192,8 +221,8 @@ header img {
 #bThree header,
 #bFour header {
     background-repeat:no-repeat;
-    background-position-x: left; 
-    background-position-y: center;    
+    background-position-x: left;
+    background-position-y: center; 
 }
 
 /* table,tr & td implemented to fix table-layout print issue */
