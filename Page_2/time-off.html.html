@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head class="dont-print">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+        <script src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Time Off Request</title>
+    </head>
+    <body>
+        <main>
+            <div id="wrapper">
+                <form class="form" method="post" action="mailto:kris@dataprobillingservice.com, rachel@dataprobillingservice.com?subject=Time-off Request" enctype="text/plain">
+                    <h2>Time-off Request</h2>
+                    <table>
+                        <tr>
+                            <td colspan="4"><input type="text" name="name" placeholder="Name"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="start-date"><h4>Start Date</h4></label></th>
+                            <td><input type="date" name="start-date" id="start-date"></td>
+                            <th><label for="start-time"><h4>Start Time</h4></label></th>
+                            <td><input type="time" name="start-time" id="start-time"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="end-date"><h4>End Date</h4></label></th>
+                            <td><input type="date" name="end-date" id="end-date"></td>
+                            <th><label for="end-time"><h4>End Time</h4></label></th>
+                            <td><input type="time" name="end-time" id="end-time"></td>
+                        </tr>
+                        <tr>
+                            <th><h4>Reason</h4></th>
+                            <td colspan="2"><select name="reason" id="reason">
+                                <option value="Parental Leave">Parental Leave</option>
+                                <option value="Off">Off</option>
+                                <option value="Vacation">Vacation</option>
+                                <option value="Sick Day">Sick</option>
+                                <option value="Unpaid">Unpaid</option>
+                                <option value="Other">Other</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                    <textarea name="Additional Notes" placeholder="Add a note (optional)"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
